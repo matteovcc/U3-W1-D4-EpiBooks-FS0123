@@ -10,7 +10,7 @@ class BookList extends Component {
       <Container className="mt-3">
         <Row className="g-3">
           {fantasy.map((book, index) => (
-            <Col xs={3} key={`book-${index}`}>
+            <Col xs={6} md={4} lg={3} key={`book-${index}`}>
               {/* <Card
                 className="border-top-1 border-start-0 border-end-1 border-bottom-0 bg-light shadow-lg h-100 p-1 book-card"
                 // key={`book-${index}`}
