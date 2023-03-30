@@ -10,10 +10,16 @@ class SingleBook extends Component {
   };
   render() {
     let cardStyle;
+    let buttonStyle;
     if (this.state.selected === true) {
-      cardStyle = { borderColor: "#198754", backgroundColor: "#eee6e3" };
+      cardStyle = {
+        borderColor: "#198754",
+        backgroundImage: "linear-gradient(to bottom, #b3e9b8, #d7d7d7)",
+      };
+      buttonStyle = { flexGrow: 1, letterSpacing: 1, fontStyle: "italic" };
     } else {
       cardStyle = { borderColor: "transparent", backgroundColor: "initial" };
+      buttonStyle = { flexGrow: 0 };
     }
     return (
       <Card
@@ -32,7 +38,9 @@ class SingleBook extends Component {
             {this.props.category}
           </Card.Text>
           <div className="mt-auto d-flex justify-content-between">
-            <Button variant="success">Buy</Button>
+            <Button style={buttonStyle} variant="success" className="me-1">
+              Buy
+            </Button>
             <Badge bg="dark" className="d-flex align-items-center">
               {this.props.price}$
             </Badge>
