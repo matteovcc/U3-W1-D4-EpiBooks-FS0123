@@ -6,7 +6,7 @@ class SingleBook extends Component {
     selected: false,
   };
   handleChange = () => {
-    this.setState({ selected: true });
+    this.setState({ selected: !this.state.selected });
   };
   render() {
       let cardStyle;
