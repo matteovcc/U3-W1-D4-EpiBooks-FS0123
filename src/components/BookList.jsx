@@ -1,8 +1,8 @@
 import { Component } from "react";
-import {Container, Row, Col} from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap";
 import fantasy from "../data/fantasy.json";
 import "../AllTheBooks.css";
-import SingleBook from "./SingleBook"
+import SingleBook from "./SingleBook";
 
 class BookList extends Component {
   render() {
@@ -33,7 +33,12 @@ class BookList extends Component {
                   </div>
                 </Card.Body>
               </Card> */}
-              <SingleBook  img={book.img} title={book.title} price={book.price} category={book.category}/>
+              <SingleBook
+                img={book.img}
+                title={book.title}
+                price={book.price}
+                category={book.category}
+              />
             </Col>
           ))}
         </Row>

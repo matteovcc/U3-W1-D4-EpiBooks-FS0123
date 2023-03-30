@@ -4,9 +4,8 @@ import BookList from "./components/BookList";
 import MyFooter from "./components/MyFooter";
 import MyNav from "./components/MyNav";
 import Welcome from "./components/Welcome";
-import './App.css';
-import SingleBook from "./components/SingleBook";
-
+import "./App.css";
+// import SingleBook from "./components/SingleBook";
 
 function App() {
   return (
@@ -14,13 +13,10 @@ function App() {
       <MyNav brand="EpiBooks Libreria Online" />
       <Welcome />
       <BookList />
-      <SingleBook/>
+      {/* <SingleBook /> */}
       <MyFooter />
     </>
   );
 }
-
-
-
 
 export default App;

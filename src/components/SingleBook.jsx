@@ -9,14 +9,18 @@ class SingleBook extends Component {
     this.setState({ selected: !this.state.selected });
   };
   render() {
-      let cardStyle;
-      if (this.state.selected === true){
-          cardStyle = { borderColor: "#198754", backgroundColor: "#eee6e3" };
-      }else {
-          cardStyle = {borderColor: "transparent", backgroundColor:"initial"}
-      }
+    let cardStyle;
+    if (this.state.selected === true) {
+      cardStyle = { borderColor: "#198754", backgroundColor: "#eee6e3" };
+    } else {
+      cardStyle = { borderColor: "transparent", backgroundColor: "initial" };
+    }
     return (
-      <Card style={cardStyle} onClick={this.handleChange} className="border-1  shadow-lg h-100 p-1 book-card">
+      <Card
+        style={cardStyle}
+        onClick={this.handleChange}
+        className="border-1  shadow-lg h-100 p-1 book-card"
+      >
         <Card.Img
           variant="top"
           src={this.props.img}
