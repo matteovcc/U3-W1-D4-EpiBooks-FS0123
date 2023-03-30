@@ -14,12 +14,12 @@ class SingleBook extends Component {
     if (this.state.selected === true) {
       cardStyle = {
         borderColor: "#198754",
-        backgroundImage: "linear-gradient(to bottom, #b3e9b8, #d7d7d7)",
-      };
-      buttonStyle = { flexGrow: 1, letterSpacing: 1, fontStyle: "italic" };
+        backgroundImage: "linear-gradient(to bottom, #b3e9b8, #d7d7d7)"
+      }
+      buttonStyle = { flexGrow: 1, letterSpacing: 1, fontStyle: "italic" }
     } else {
-      cardStyle = { borderColor: "transparent", backgroundColor: "initial" };
-      buttonStyle = { flexGrow: 0 };
+      cardStyle = { borderColor: "transparent", backgroundColor: "initial" }
+      buttonStyle = { flexGrow: 0 }
     }
     return (
       <Card
